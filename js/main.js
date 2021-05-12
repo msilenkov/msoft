@@ -86,10 +86,7 @@ $(document).ready(function(){
     let productsList = new Swiper ('.products-list-slider', {
         spaceBetween: 20,
         speed: 500,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        autoplay: false,
         loop: true,
         pagination: {
             el: '.swiper-products-pagination',
@@ -101,9 +98,19 @@ $(document).ready(function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             768: {
                 slidesPerView: 2,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             1024: {
                 slidesPerView: 3,
@@ -119,10 +126,7 @@ $(document).ready(function(){
     let productsList2 = new Swiper ('.products-list-slider2', {
         spaceBetween: 20,
         speed: 500,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        autoplay: false,
         loop: true,
         pagination: {
             el: '.swiper-products-pagination',
@@ -134,9 +138,19 @@ $(document).ready(function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             768: {
                 slidesPerView: 2,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             1024: {
                 slidesPerView: 3,
@@ -154,10 +168,7 @@ $(document).ready(function(){
     let productsList3 = new Swiper ('.products-list-slider3', {
         spaceBetween: 20,
         speed: 500,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        autoplay: false,
         loop: true,
         pagination: {
             el: '.swiper-products-pagination',
@@ -169,9 +180,19 @@ $(document).ready(function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             768: {
                 slidesPerView: 2,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+                loop: true,
             },
             1024: {
                 slidesPerView: 3,
@@ -198,7 +219,7 @@ $(document).ready(function(){
         breakpoints: {
             320: {
                 slidesPerView: 1,
-                slidesPerGroup: 1
+                slidesPerGroup: 1,
             },
             768: {
                 slidesPerView: 2,

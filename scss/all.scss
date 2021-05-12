@@ -2,14 +2,14 @@
     font-family: 'TT Commons Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('TT Commons Regular'), url('../fonts/TT Commons Regular.woff') format('woff');
+    src: local('TT Commons Regular'), url('../fonts/TTCommons-Regular.woff') format('woff');
 }
 
 @font-face {
     font-family: 'TT Commons Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('TT Commons Bold'), url('../fonts/TT Commons Bold.woff') format('woff');
+    src: local('TT Commons Bold'), url('../fonts/TTCommons-Bold.woff') format('woff');
 }
 
 $mq-breakpoints: (
@@ -201,7 +201,7 @@ body {
         color: #181425;
         
         &:hover {
-            color: var(--primary-color);
+            color: #f00;
         }
     }
     
@@ -266,6 +266,7 @@ body {
     
     &:hover {
         text-decoration: none;
+        color: #f00;
     }
     
     &.btn-large {
@@ -289,7 +290,7 @@ body {
         color: #181425;
         
         &:hover {
-            color: var(--primary-color);
+            color: #f00;
         }
     }
     
@@ -301,7 +302,7 @@ body {
         padding-bottom: 11px;
         
         &:hover {
-            color: #000;
+            color: #f00;
             background: var(--primary-color);
         }
     }
@@ -310,7 +311,7 @@ body {
         color: var(--primary-color);
         
         &:hover {
-            color: #000;
+            color: #f00;
         }
     }
     
@@ -318,7 +319,8 @@ body {
         background: #F03F37;
     
         &:hover {
-            color: #000;
+            color: #fff;
+            background: lighten(#f00, 20%);
         }
     }
     
@@ -892,6 +894,7 @@ body {
     
     .icon {
         margin-right: 6px;
+        padding-bottom: 2px;
         
         img {
             display: block;
@@ -916,6 +919,10 @@ body {
     &__link {
         text-decoration: underline;
         color: var(--primary-color);
+        
+        &:hover {
+            color: #f00;
+        }
     }
 }
 
@@ -1488,7 +1495,7 @@ body {
         color: #01A09A;
         
         &:hover {
-            color: #000;
+            color: #f00;
         }
     }
     
@@ -1803,5 +1810,11 @@ body {
             font-size: 20px;
             line-height: 28px;
         }
+    }
+}
+
+.swiper-pagination-bullet {
+    &:hover {
+        color: #f00 !important;
     }
 }

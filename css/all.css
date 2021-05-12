@@ -2,13 +2,13 @@
   font-family: 'TT Commons Regular';
   font-style: normal;
   font-weight: normal;
-  src: local("TT Commons Regular"), url("../fonts/TT Commons Regular.woff") format("woff"); }
+  src: local("TT Commons Regular"), url("../fonts/TTCommons-Regular.woff") format("woff"); }
 
 @font-face {
   font-family: 'TT Commons Bold';
   font-style: normal;
   font-weight: normal;
-  src: local("TT Commons Bold"), url("../fonts/TT Commons Bold.woff") format("woff"); }
+  src: local("TT Commons Bold"), url("../fonts/TTCommons-Bold.woff") format("woff"); }
 
 .nav ul, .content-section__content ul, .partners-list, .socials, .products {
   margin: 0;
@@ -324,7 +324,7 @@ body {
   font-size: 20px;
   color: #181425; }
   .nav a:hover {
-    color: var(--primary-color); }
+    color: #f00; }
 
 @media all and (max-width: 1024px) {
   .nav ul {
@@ -372,7 +372,8 @@ body {
   cursor: pointer;
   text-align: center; }
   .btn:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #f00; }
   .btn.btn-large {
     padding: 22px 30px; }
     .btn.btn-large.btn-outline {
@@ -387,7 +388,7 @@ body {
     background: none;
     color: #181425; }
     .btn.btn-transparent:hover {
-      color: var(--primary-color); }
+      color: #f00; }
   .btn.btn-outline {
     border: 1px solid var(--primary-color);
     background: none;
@@ -395,16 +396,17 @@ body {
     padding-top: 11px;
     padding-bottom: 11px; }
     .btn.btn-outline:hover {
-      color: #000;
+      color: #f00;
       background: var(--primary-color); }
   .btn.btn-text-primary {
     color: var(--primary-color); }
     .btn.btn-text-primary:hover {
-      color: #000; }
+      color: #f00; }
   .btn.btn-red {
     background: #F03F37; }
     .btn.btn-red:hover {
-      color: #000; }
+      color: #fff;
+      background: #ff3333; }
   @media all and (max-width: 1024px) {
     .btn .btn-small {
       font-size: 16px; } }
@@ -807,7 +809,8 @@ body {
           justify-content: center;
   margin-bottom: 20px; }
   .video-link .icon {
-    margin-right: 6px; }
+    margin-right: 6px;
+    padding-bottom: 2px; }
     .video-link .icon img {
       display: block;
       width: 17px;
@@ -823,6 +826,8 @@ body {
   .other-articles__link {
     text-decoration: underline;
     color: var(--primary-color); }
+    .other-articles__link:hover {
+      color: #f00; }
 
 .video-section {
   background: #F5F7F8;
@@ -1230,7 +1235,7 @@ body {
   .products a {
     color: #01A09A; }
     .products a:hover {
-      color: #000; }
+      color: #f00; }
   @media all and (max-width: 767px) {
     .products {
       padding-bottom: 70px; } }
@@ -1482,4 +1487,7 @@ body {
       .contacts-section .label {
         font-size: 20px;
         line-height: 28px; } }
+
+.swiper-pagination-bullet:hover {
+  color: #f00 !important; }
 /*# sourceMappingURL=all.css.map */
