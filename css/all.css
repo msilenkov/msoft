@@ -372,8 +372,9 @@ body {
   cursor: pointer;
   text-align: center; }
   .btn:hover {
+    background: #F03F37;
     text-decoration: none;
-    color: #f00; }
+    color: #fff; }
   .btn.btn-large {
     padding: 23px 30px 21px; }
     .btn.btn-large.btn-outline {

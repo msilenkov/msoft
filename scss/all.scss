@@ -265,8 +265,9 @@ body {
     text-align: center;
     
     &:hover {
+        background: #F03F37;
         text-decoration: none;
-        color: #f00;
+        color: #fff;
     }
     
     &.btn-large {
