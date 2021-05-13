@@ -364,7 +364,7 @@ body {
   font-size: 20px;
   line-height: 28px;
   color: #fff;
-  padding: 12px 40px;
+  padding: 13px 40px 11px;
   background: var(--primary-color);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -375,7 +375,7 @@ body {
     text-decoration: none;
     color: #f00; }
   .btn.btn-large {
-    padding: 22px 30px; }
+    padding: 23px 30px 21px; }
     .btn.btn-large.btn-outline {
       border: 2px solid var(--primary-color);
       padding-top: 20px;
@@ -383,7 +383,7 @@ body {
   .btn.btn-small {
     font-size: 18px;
     line-height: 25px;
-    padding: 9px 15px; }
+    padding: 10px 15px 8px; }
   .btn.btn-transparent {
     background: none;
     color: #181425; }
@@ -393,10 +393,10 @@ body {
     border: 1px solid var(--primary-color);
     background: none;
     color: var(--primary-color);
-    padding-top: 11px;
-    padding-bottom: 11px; }
+    padding-top: 12px;
+    padding-bottom: 10px; }
     .btn.btn-outline:hover {
-      color: #f00;
+      color: #fff;
       background: var(--primary-color); }
   .btn.btn-text-primary {
     color: var(--primary-color); }
@@ -406,7 +406,7 @@ body {
     background: #F03F37; }
     .btn.btn-red:hover {
       color: #fff;
-      background: #ff3333; }
+      background: #ff6666; }
   @media all and (max-width: 1024px) {
     .btn .btn-small {
       font-size: 16px; } }
@@ -824,7 +824,6 @@ body {
     display: block;
     font-weight: bold; }
   .other-articles__link {
-    text-decoration: underline;
     color: var(--primary-color); }
     .other-articles__link:hover {
       color: #f00; }

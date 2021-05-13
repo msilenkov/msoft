@@ -257,7 +257,7 @@ body {
     font-size: 20px;
     line-height: 28px;
     color: #fff;
-    padding: 12px 40px;
+    padding: 13px 40px 11px;
     background: var(--primary-color);
     transition: all 0.3s;
     border: 0;
@@ -270,7 +270,7 @@ body {
     }
     
     &.btn-large {
-        padding: 22px 30px;
+        padding: 23px 30px 21px;
     
         &.btn-outline {
             border: 2px solid var(--primary-color);
@@ -282,7 +282,7 @@ body {
     &.btn-small {
         font-size: 18px;
         line-height: 25px;
-        padding: 9px 15px;
+        padding: 10px 15px 8px;
     }
     
     &.btn-transparent {
@@ -298,11 +298,11 @@ body {
         border: 1px solid var(--primary-color);
         background: none;
         color: var(--primary-color);
-        padding-top: 11px;
-        padding-bottom: 11px;
+        padding-top: 12px;
+        padding-bottom: 10px;
         
         &:hover {
-            color: #f00;
+            color: #fff;
             background: var(--primary-color);
         }
     }
@@ -917,7 +917,6 @@ body {
     }
     
     &__link {
-        text-decoration: underline;
         color: var(--primary-color);
         
         &:hover {
