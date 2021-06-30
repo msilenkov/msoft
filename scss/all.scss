@@ -545,6 +545,10 @@ body {
     }
 }
 
+.intro-slider-single {
+    @extend .intro-slider;
+}
+
 @keyframes progressUp {
     0% {
         width: 0;
