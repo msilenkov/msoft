@@ -12,6 +12,7 @@ $(document).ready(function(){
             },
         },
         loop: true,
+        allowTouchMove: false,
         loopAdditionalSlides: 0,
         /*on: {
             slideChangeTransitionStart: function(swiper) {
@@ -31,10 +32,6 @@ $(document).ready(function(){
             },
         },*/
         speed: 500,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
     });
 
     let menuReview = [
