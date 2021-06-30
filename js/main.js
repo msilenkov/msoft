@@ -12,7 +12,6 @@ $(document).ready(function(){
             },
         },
         loop: true,
-        allowTouchMove: false,
         loopAdditionalSlides: 0,
         /*on: {
             slideChangeTransitionStart: function(swiper) {
@@ -32,7 +31,27 @@ $(document).ready(function(){
             },
         },*/
         speed: 500,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
     });
+    
+    let articleCard = new Swiper ('.intro-slider-single', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return '<span class="' + className + '">' + (menu[index]) + '</span>';
+            },
+        },
+        loop: true,
+        allowTouchMove: false,
+        loopAdditionalSlides: 0,
+        speed: 500,
+    });
+    
+    
 
     let menuReview = [
         {
