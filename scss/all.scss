@@ -1765,23 +1765,18 @@ body {
         align-items: flex-start;
     }
     
-    .address-holder {
-        pointer-events: auto;
-        
+    .address-holder,
+    .phone-holder {
         .btn {
             background: #fff;
             border-color: #000;
             color: #000;
-            
+        
             &:hover {
                 background: #000;
                 color: #fff;
             }
         }
-    }
-    
-    .phone-holder {
-        pointer-events: auto;
     }
     
     .label {
@@ -1793,16 +1788,8 @@ body {
     }
     
     .phone {
-        display: inline-block;
-        vertical-align: top;
-        font-size: 62px;
+        font-size: 42px;
         line-height: 52px;
-        color: #000000;
-        border-bottom: 2px solid #000;
-        
-        &:hover {
-            border-bottom: 2px solid rgba(0,0,0,0);
-        }
     }
     
     address {

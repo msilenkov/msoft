@@ -1457,17 +1457,15 @@ body {
     padding-bottom: 70px;
     -webkit-box-align: start;
             align-items: flex-start; }
-  .contacts-section .address-holder {
-    pointer-events: auto; }
-    .contacts-section .address-holder .btn {
-      background: #fff;
-      border-color: #000;
-      color: #000; }
-      .contacts-section .address-holder .btn:hover {
-        background: #000;
-        color: #fff; }
-  .contacts-section .phone-holder {
-    pointer-events: auto; }
+  .contacts-section .address-holder .btn,
+  .contacts-section .phone-holder .btn {
+    background: #fff;
+    border-color: #000;
+    color: #000; }
+    .contacts-section .address-holder .btn:hover,
+    .contacts-section .phone-holder .btn:hover {
+      background: #000;
+      color: #fff; }
   .contacts-section .label {
     display: block;
     font-size: 32px;
@@ -1475,14 +1473,8 @@ body {
     color: #000000;
     margin-bottom: 10px; }
   .contacts-section .phone {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 62px;
-    line-height: 52px;
-    color: #000000;
-    border-bottom: 2px solid #000; }
-    .contacts-section .phone:hover {
-      border-bottom: 2px solid rgba(0, 0, 0, 0); }
+    font-size: 42px;
+    line-height: 52px; }
   .contacts-section address {
     font-size: 52px;
     line-height: 62px;
