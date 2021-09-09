@@ -1513,4 +1513,20 @@ body {
 
 .swiper-pagination-bullet:hover {
   color: #f00 !important; }
+
+.swiper-pagination-bullet.disable-text .name,
+.swiper-pagination-bullet.disable-text .company {
+  display: none !important; }
+
+.pagination-wrap .swiper-pagination-bullets {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+          justify-content: center; }
+
+.pagination-wrap .swiper-pagination-bullet {
+  -webkit-box-flex: 1 !important;
+          flex: 1 0 0 !important;
+  max-width: 133px; }
 /*# sourceMappingURL=all.css.map */

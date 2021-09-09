@@ -1850,4 +1850,24 @@ body {
     &:hover {
         color: #f00 !important;
     }
+    
+    &.disable-text {
+        .name,
+        .company {
+            display: none !important;
+        }
+    }
+}
+
+.pagination-wrap {
+    .swiper-pagination-bullets {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .swiper-pagination-bullet {
+        flex: 1 0 0 !important;
+        max-width: 133px;
+    }
 }

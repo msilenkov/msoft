@@ -36,13 +36,14 @@ $(document).ready(function(){
             disableOnInteraction: false,
         },
     });
-    
+
     let articleCard = new Swiper ('.intro-slider-single', {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (menu[index]) + '</span>';
+                const amountClass = menu.length > 3 ? 'disable-text' : '';
+                return '<span class="' + className + ' ' + amountClass  + '">' + (menu[index]) + '</span>';
             },
         },
         loop: true,
@@ -50,13 +51,21 @@ $(document).ready(function(){
         loopAdditionalSlides: 0,
         speed: 500,
     });
-    
-    
+
+
 
     let menuReview = [
         {
             name: 'Асхат Темергалиев',
             company: 'Казатомпром'
+        },
+        {
+            name: 'Сергей Рысин',
+            company: 'ГТЛК'
+        },
+        {
+            name: 'Иван Минин',
+            company: 'ВЭБ Капитал'
         },
         {
             name: 'Сергей Рысин',
@@ -73,7 +82,8 @@ $(document).ready(function(){
             el: '.swiper-review-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' +
+                const amountClass = menuReview.length > 3 ? 'disable-text' : '';
+                return '<span class="' + className + ' ' + amountClass + '">' +
                     '<span class="name">' + (menuReview[index].name) + '</span>' +
                     '<span class="company">' + (menuReview[index].company) + '</span>' +
                 '</span>';
@@ -108,7 +118,8 @@ $(document).ready(function(){
             el: '.swiper-products-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (productsListMenu[index]) + '</span>';
+                const amountClass = productsListMenu.length > 3 ? 'disable-text' : '';
+                return '<span class="' + className + ' ' + amountClass +'">' + (productsListMenu[index]) + '</span>';
             },
         },
         breakpoints: {
@@ -148,7 +159,8 @@ $(document).ready(function(){
             el: '.swiper-products-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (productsListMenu2[index]) + '</span>';
+                const amountClass = productsListMenu2.length > 3 ? 'disable-text' : '';
+                return '<span class="' + className + ' ' + amountClass + '">' + (productsListMenu2[index]) + '</span>';
             },
         },
         breakpoints: {
@@ -190,7 +202,8 @@ $(document).ready(function(){
             el: '.swiper-products-pagination',
             clickable: true,
             renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (productsListMenu3[index]) + '</span>';
+                const amountClass = productsListMenu3.length > 3 ? 'disable-text' : '';
+                return '<span class="' + className + ' ' + amountClass + '">' + (productsListMenu3[index]) + '</span>';
             },
         },
         breakpoints: {
