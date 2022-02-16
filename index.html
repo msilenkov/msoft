@@ -257,7 +257,17 @@
                 <div class="contact-form">
                     <form action="#">
                         <div class="contact-form__row">
-                            <input type="text" class="text-field single" placeholder="Введите ваш E-mail">
+                            <div class="contact-form__col">
+                                <input type="text" class="text-field" placeholder="Ваш E-mail">
+                            </div>
+                            <div class="contact-form__col">
+                                <div class="capcha-box">
+                                    <div class="capcha-box__row">
+                                        <input type="text" type="text" class="capcha-box__input">
+                                        <span class="capcha-box__equation">- 3 = 12</span>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="submit btn btn-red btn-large">Попробовать</button>
                         </div>
                     </form>
@@ -438,11 +448,19 @@
                 <div class="contact-form">
                     <form action="#">
                         <div class="contact-form__row">
-                            <div class="contact-form__col">
+                            <div class="contact-form__col small">
                                 <input type="text" class="text-field" placeholder="Ваш вопрос">
                             </div>
-                            <div class="contact-form__col">
+                            <div class="contact-form__col small">
                                 <input type="text" class="text-field" placeholder="Ваш E-mail">
+                            </div>
+                            <div class="contact-form__col small">
+                                <div class="capcha-box">
+                                    <div class="capcha-box__row">
+                                        <input type="text" type="text" class="capcha-box__input">
+                                        <span class="capcha-box__equation">- 3 = 12</span>
+                                    </div>
+                                </div>
                             </div>
                             <button class="submit btn btn-red btn-large">Попробовать</button>
                         </div>
